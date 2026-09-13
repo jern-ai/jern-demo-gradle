@@ -1,0 +1,16 @@
+{
+  "//": "The protected baseline. Jern Cloud pins it by digest for the life of a session, so a session cannot weaken it.",
+  "policy": {
+    "allow": ["edit_file", "edit_symbol", "apply_patch", "write_file", "mcp__jern__read_issue", "mcp__jern__ask_human"],
+    "edits_within": ["src/"],
+    "protected_paths": [".jern/", ".github/", "build.gradle.kts", "settings.gradle.kts"],
+    "max_files_edited": 4,
+    "max_lines_changed": 200,
+    "memory": "allow",
+    "shell_allow": ["gradle --no-daemon test", "gradle"]
+  },
+  "environment": {
+    "network_allow": ["repo.maven.apache.org"]
+  },
+  "test_command": "gradle --no-daemon test"
+}
