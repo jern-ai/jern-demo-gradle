@@ -1,5 +1,11 @@
 {
   "test_command": "gradle --no-daemon --offline test",
-  "policy": { "edits_within": ["src/"] },
-  "budget": { "llm_calls": 30 }
+  "policy": {
+    "edits_within": [
+      "src/"
+    ]
+  },
+  "budget": {
+    "llm_calls": 80
+  }
 }
