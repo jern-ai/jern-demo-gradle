@@ -7,10 +7,10 @@
     "max_files_edited": 4,
     "max_lines_changed": 200,
     "memory": "allow",
-    "shell_allow": ["gradle --no-daemon test", "gradle"]
+    "shell_allow": ["gradle --no-daemon --offline test", "gradle --no-daemon test", "gradle"]
   },
   "environment": {
     "network_allow": ["repo.maven.apache.org"]
   },
-  "test_command": "gradle --no-daemon test"
+  "test_command": "gradle --no-daemon --offline test"
 }
