@@ -10,7 +10,6 @@ public final class Temperature {
 
     /** Convert a temperature from Fahrenheit to Celsius. */
     public static double fahrenheitToCelsius(double fahrenheit) {
-        // Wrong: the 32-degree offset is missing.
-        return fahrenheit * 5.0 / 9.0;
+        return (fahrenheit - 32.0) * 5.0 / 9.0;
     }
 }
