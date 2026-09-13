@@ -22,7 +22,7 @@
     "max_lines_changed": 200,
     "memory": "allow",
     "shell_allow": [
-      "gradle --no-daemon --offline clean test",
+      "gradle --no-daemon --offline test",
       "gradle --no-daemon test",
       "gradle"
     ]
@@ -32,5 +32,5 @@
       "repo.maven.apache.org"
     ]
   },
-  "test_command": "gradle --no-daemon --offline clean test"
+  "test_command": "gradle --no-daemon --offline test"
 }
