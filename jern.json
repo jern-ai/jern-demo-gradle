@@ -1,5 +1,5 @@
 {
-  "test_command": "gradle --no-daemon --offline test",
+  "test_command": "gradle --no-daemon --offline clean test",
   "policy": {
     "edits_within": [
       "src/"
