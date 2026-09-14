@@ -7,15 +7,16 @@
       "apply_patch",
       "write_file",
       "mcp__jern__read_issue",
-      "mcp__jern__ask_human"
+      "mcp__jern__ask_human",
+      "mcp__jern__package_info"
     ],
     "edits_within": [
-      "src/"
+      "src/",
+      "build.gradle.kts"
     ],
     "protected_paths": [
       ".jern/",
       ".github/",
-      "build.gradle.kts",
       "settings.gradle.kts"
     ],
     "max_files_edited": 4,
@@ -24,6 +25,7 @@
     "shell_allow": [
       "gradle --no-daemon --offline test",
       "gradle --no-daemon test",
+      "gradle --no-daemon compileTestJava",
       "gradle"
     ]
   },
@@ -32,5 +34,5 @@
       "repo.maven.apache.org"
     ]
   },
-  "test_command": "gradle --no-daemon --offline test"
+  "test_command": "gradle --no-daemon test"
 }

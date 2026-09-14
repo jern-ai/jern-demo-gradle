@@ -1,8 +1,9 @@
 {
-  "test_command": "gradle --no-daemon --offline test",
+  "test_command": "gradle --no-daemon test",
   "policy": {
     "edits_within": [
-      "src/"
+      "src/",
+      "build.gradle.kts"
     ]
   },
   "budget": {
