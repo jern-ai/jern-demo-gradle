@@ -12,3 +12,6 @@ jern run "fix the failing test"
 
 Pull requests opened by benchmark runs are closed, not merged: the bug is
 the point.
+
+A Jern Cloud maintenance campaign on staging runs against this repository
+every hour; its runs settle against the campaign's terms, not this README.
