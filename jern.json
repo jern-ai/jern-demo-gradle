@@ -6,6 +6,6 @@
     ]
   },
   "budget": {
-    "llm_calls": 80
+    "llm_calls": 30
   }
 }
